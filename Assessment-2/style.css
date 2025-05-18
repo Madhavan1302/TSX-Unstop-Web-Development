@@ -1,16 +1,18 @@
-/* Set base font and make layout full-height */
+/* Global layout setup */
 html, body {
   height: 100%;
   margin: 0;
   padding: 0;
-  font-family: Arial, sans-serif;
+  font-family: 'Segoe UI', sans-serif;
   display: flex;
   flex-direction: column;
+  background-color: #f5f5f5;
+  color: #333;
 }
 
-/* Header and Navigation styles */
+/* Header and Navigation with indigo */
 header {
-  background-color: #333;
+  background-color: #3f51b5;
   color: white;
   padding: 20px;
   text-align: center;
@@ -29,16 +31,13 @@ nav ul {
   gap: 15px;
 }
 
-nav ul li {
-  display: inline;
-}
-
 nav ul li a {
-  color: white;
+  color: #ffc107;
   text-decoration: none;
+  font-weight: bold;
 }
 
-/* Main content centered and grows to fill space */
+/* Main content */
 main {
   flex: 1;
   padding: 20px;
@@ -48,7 +47,6 @@ main {
   justify-content: center;
 }
 
-/* Article content formatting */
 article {
   max-width: 600px;
   text-align: center;
@@ -56,29 +54,33 @@ article {
 }
 
 h2 {
-  color: teal;
+  color: #3f51b5;
 }
 
 p {
   font-size: 18px;
+  line-height: 1.6;
 }
 
-/* Button styling */
+/* Button with amber */
 button {
   padding: 10px 20px;
-  background-color: teal;
-  color: white;
+  background-color: #ffc107;
+  color: #3f51b5;
   border: none;
   cursor: pointer;
+  font-weight: bold;
+  border-radius: 4px;
 }
 
 button:hover {
-  background-color: darkcyan;
+  background-color: #ffb300;
 }
 
-/* Footer at the bottom */
+/* Footer styling */
 footer {
-  background-color: #f4f4f4;
+  background-color: #e0e0e0;
   text-align: center;
   padding: 10px;
+  font-size: 14px;
 }
